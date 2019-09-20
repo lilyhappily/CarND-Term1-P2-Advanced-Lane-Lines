@@ -150,7 +150,7 @@ In the pipeline in part 5 and part 6 of `P2-Advanced-Lane-Finding.ipynb`, all th
 
 ## My video
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./project_video_output.mp4)
 
 ## Discussion
 
