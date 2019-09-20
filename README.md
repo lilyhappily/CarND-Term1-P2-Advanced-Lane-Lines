@@ -115,16 +115,11 @@ After I fit a second polynomial on the first frame, then for next frame, each y 
 
 I computed the lane curvature in member function `getCurvature()` of `class Line()` in lines `161-197`. In 4.1 part, I located the lane line pixels, used their x and y pixel positions to fit a second order polynomial curve: **f(y) = Ax<sup>2</sup> + Bx + C**.
 
-The radius of curvature ([awesome tutorial here](http://www.intmath.com/applications-differentiation/8-radius-curvature.php)) at any point *x* of the function *x*=*f*(*y*) is given as follows:
-$$
-Rcurve = {\frac{[1+({dy / dx})^2]^{3/2}}{\left| d^2x/dy^2 \right|}}
-$$
-![img](http://latex.codecogs.com/svg.latex?Rcurve+%3D+%7B%5Cfrac%7B%5B1%2B%28%7Bdy+%2F+dx%7D%29%5E2%5D%5E%7B3%2F2%7D%7D%7B%5Cleft%7C+d%5E2x%2Fdy%5E2+%5Cright%7C%7D%7D)
-In the case of the second order polynomial above, the first and second derivatives are:
-$$
-\ f'(y) = \frac{dx}{dy} = 2Ay + B
-$$
+The radius of curvature ([awesome tutorial here](http://www.intmath.com/applications-differentiation/8-radius-curvature.php)) at any point *x* of the function *x*=*f*(*y*) is given as follows:\
 
+![img](http://latex.codecogs.com/svg.latex?Rcurve+%3D+%7B%5Cfrac%7B%5B1%2B%28%7Bdy+%2F+dx%7D%29%5E2%5D%5E%7B3%2F2%7D%7D%7B%5Cleft%7C+d%5E2x%2Fdy%5E2+%5Cright%7C%7D%7D)
+In the case of the second order polynomial above, the first and second derivatives are:\
+![img](http://latex.codecogs.com/svg.latex?%5C+f%27%28y%29+%3D+%5Cfrac%7Bdx%7D%7Bdy%7D+%3D+2Ay+%2B+B)
 $$
 \ f''(y) = \frac{d^2x}{dy^2} = 2A
 $$
