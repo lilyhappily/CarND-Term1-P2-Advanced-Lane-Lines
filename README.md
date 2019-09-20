@@ -117,17 +117,17 @@ I computed the lane curvature in member function `getCurvature()` of `class Line
 
 The radius of curvature ([awesome tutorial here](http://www.intmath.com/applications-differentiation/8-radius-curvature.php)) at any point *x* of the function *x*=*f*(*y*) is given as follows:
 
-![img](http://latex.codecogs.com/svg.latex?Rcurve+%3D+%7B%5Cfrac%7B%5B1%2B%28%7Bdy+%2F+dx%7D%29%5E2%5D%5E%7B3%2F2%7D%7D%7B%5Cleft%7C+d%5E2x%2Fdy%5E2+%5Cright%7C%7D%7D)
+![img](http://latex.codecogs.com/svg.latex?Rcurve%3D%7B%5Cfrac%7B%5B1%2B%28%7Bdy%2Fdx%7D%29%5E2%5D%5E%7B3%2F2%7D%7D%7B%5Cleft%7Cd%5E2x%2Fdy%5E2%5Cright%7C%7D%7D)
 
 In the case of the second order polynomial above, the first and second derivatives are:
 
-![img](http://latex.codecogs.com/svg.latex?f%27%28y%29+%3D+%5Cfrac%7Bdx%7D%7Bdy%7D+%3D+2Ay+%2B+B)
+![img](http://latex.codecogs.com/svg.latex?f%27%28y%29%3D%5Cfrac%7Bdx%7D%7Bdy%7D%3D2Ay%2BB)
 
-![img](http://latex.codecogs.com/svg.latex?f%27%27%28y%29+%3D+%5Cfrac%7Bd%5E2x%7D%7Bdy%5E2%7D+%3D+2A)
+![img](http://latex.codecogs.com/svg.latex?f%27%27%28y%29%3D%5Cfrac%7Bd%5E2x%7D%7Bdy%5E2%7D%3D2A)
 
 So, our equation for radius of curvature becomes:
 
-![img](http://latex.codecogs.com/svg.latex?R_%7Bcurve%7D+%3D+%5Cfrac%7B%281+%2B+%282Ay+%2B+B%29%5E2%29%5E%7B3%2F2%7D%7D%7B%5Cleft+%7C2A+%5Cright+%7C%7D)
+![img](http://latex.codecogs.com/svg.latex?R_%7Bcurve%7D%3D%5Cfrac%7B%281%2B%282Ay%2BB%29%5E2%29%5E%7B3%2F2%7D%7D%7B%5Cleft%7C2A%5Cright+%7C%7D)
 
 In my codes, I got the `left_fit_cr` and `right_fit_cr` of `polynomial coefficients` . so if, I wanted to measure the radius of curvature closest to the vehicle, I could evaluate the formula above at the *y* value corresponding to the bottom of your image, or in Python, at `y_eval = image.shape[0]` in the codes as follows. 
 
