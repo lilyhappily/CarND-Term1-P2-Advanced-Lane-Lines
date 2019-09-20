@@ -119,6 +119,7 @@ The radius of curvature ([awesome tutorial here](http://www.intmath.com/applicat
 $$
 Rcurve = {\frac{[1+({dy / dx})^2]^{3/2}}{\left| d^2x/dy^2 \right|}}
 $$
+![img](http://latex.codecogs.com/svg.latex?Rcurve+%3D+%7B%5Cfrac%7B%5B1%2B%28%7Bdy+%2F+dx%7D%29%5E2%5D%5E%7B3%2F2%7D%7D%7B%5Cleft%7C+d%5E2x%2Fdy%5E2+%5Cright%7C%7D%7D)
 In the case of the second order polynomial above, the first and second derivatives are:
 $$
 \ f'(y) = \frac{dx}{dy} = 2Ay + B
