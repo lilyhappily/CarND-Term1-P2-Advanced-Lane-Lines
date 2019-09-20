@@ -121,15 +121,14 @@ The radius of curvature ([awesome tutorial here](http://www.intmath.com/applicat
 
 In the case of the second order polynomial above, the first and second derivatives are:
 
-![img](http://latex.codecogs.com/svg.latex?%5C+f%27%28y%29+%3D+%5Cfrac%7Bdx%7D%7Bdy%7D+%3D+2Ay+%2B+B)
-$$
-\ f''(y) = \frac{d^2x}{dy^2} = 2A
-$$
+![img](http://latex.codecogs.com/svg.latex?f%27%28y%29+%3D+%5Cfrac%7Bdx%7D%7Bdy%7D+%3D+2Ay+%2B+B)
+
+![img](http://latex.codecogs.com/svg.latex?f%27%27%28y%29+%3D+%5Cfrac%7Bd%5E2x%7D%7Bdy%5E2%7D+%3D+2A)
 
 So, our equation for radius of curvature becomes:
-$$
-\ R_{curve} = \frac{(1 + (2Ay + B)^2)^{3/2}}{\left |2A \right |}
-$$
+
+![img](http://latex.codecogs.com/svg.latex?R_%7Bcurve%7D+%3D+%5Cfrac%7B%281+%2B+%282Ay+%2B+B%29%5E2%29%5E%7B3%2F2%7D%7D%7B%5Cleft+%7C2A+%5Cright+%7C%7D)
+
 In my codes, I got the `left_fit_cr` and `right_fit_cr` of `polynomial coefficients` . so if, I wanted to measure the radius of curvature closest to the vehicle, I could evaluate the formula above at the *y* value corresponding to the bottom of your image, or in Python, at `y_eval = image.shape[0]` in the codes as follows. 
 
 ```python
