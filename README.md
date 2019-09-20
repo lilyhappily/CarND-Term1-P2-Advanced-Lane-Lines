@@ -129,7 +129,7 @@ So, our equation for radius of curvature becomes:
 
 ![img](http://latex.codecogs.com/svg.latex?Rcurve%3D%5Cfrac%7B%281%2B%282Ay%2BB%29%5E2%29%5E%7B3%2F2%7D%7D%7B%5Cleft%7C2A%5Cright%7C%7D)
 
-In my codes, I got the `left_fit_cr` and `right_fit_cr` of `polynomial coefficients` . so if, I wanted to measure the radius of curvature closest to the vehicle, I could evaluate the formula above at the *y* value corresponding to the bottom of your image, or in Python, at `y_eval = image.shape[0]` in the codes as follows. 
+In my codes, I got the `left_fit_cr` and `right_fit_cr` as `polynomial coefficients` . so if, I wanted to measure the radius of curvature closest to the vehicle, I could evaluate the formula above at the *y* value corresponding to the bottom of your image, or in Python, at `y_eval = image.shape[0]` in the codes as follows. 
 
 ```python
 # Calculation of R_curve (radius of curvature)
